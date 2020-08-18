@@ -47,9 +47,9 @@ get_header(); ?>
         </div>
     </section>
 
-
+<section class="activity site-content">
     <section class="recent-posts">
-        <div class="site-content">
+<!--        <div class="site-content">-->
             <div class="blog-post">
                 <h4>From the Blog</h4>
                <?php query_posts('posts_per_page=1'); ?>
@@ -59,7 +59,17 @@ get_header(); ?>
                 <?php endwhile; ?> 
                 <?php wp_reset_query(); ?>
             </div>
-        </div>
+<!--        </div>-->
     </section>
+
+    <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+        <div id="secondary" class="widget-area" role="complementary">
+            <h4>Recent Tweet</h4>
+	           <?php dynamic_sidebar( 'sidebar-2' ); ?>
+            <a class="follow-us-btn" href="https://twitter.com/Chris_EpherBean">Follow Us <span>&gt;</span></a>
+        </div>
+    <?php endif; ?>
+</section>
+
 
 <?php get_footer(); ?>
