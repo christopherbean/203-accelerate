@@ -10,149 +10,40 @@ Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibi
 Text Domain:  accelerate-theme-child
 */
 
-.home-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-}
-
-#masthead {
-    background: none repeat scroll 0 0 #45ac9d;
-}
-
-.button {
-    background: none repeat scroll 0 0 #45ac9d;
-}
-
-/*### Activity Section ###*/
-.activity{
-    display: flex;
-    justify-content: space-between;
-}
-
-.activity h4{
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #a6a6a6;
-    text-transform: uppercase;
-    margin: 2em 0 .5em;
-}
-
-.activity h3{
-    margin-top: 1em;
-    font-size: 1.5em;
-}
-
-
-/*recent posts*/
-.recent-posts{
-    width: 45%;
-}
-.blog-post{
-/*    width: 50%;*/
-/*    float: left;*/
-    margin-bottom: 2em;
-}
-
-.read-more-link,
-.follow-us-btn {
-	font-family: 'Montserrat';
-	font-weight: 700;
-	color: #45ac9d;
-	text-transform: uppercase;
-}
-
-/*twitter feed*/
-
-div#secondary.widget-area{
-    width: 45%;
-}
-
-ul.tweets{
-    list-style: none;
-}
-
-.follow-us-btn span{
-    font-size: .7em;
-}
-
-.tweets li{
-    margin: 30px 0px;
-}
-
-span.stt-em{
-    display: none;
-}
-/*#### Case Studies ####*/
-
-article.case-study{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-aside.case-study-sidebar{
-    flex-basis: 35%;
-}
-
-div.case-study-images{
-    flex-basis: 55%;
-}
-
-aside.case-study-sidebar h2{
-    font-size: 1.47em;
+#main{
     margin-bottom: 0;
 }
 
-aside.case-study-sidebar h4{
-    font-size: 0.82em;
-    font-weight: 500;
-    color: #878787;
-    margin-top: 0px;
+.hero-content h3{
+    font-size: 1.2em;
 }
 
-aside.case-study-sidebar h4 span{
-    color: #3b3b3b;
-}
-
-div.case-study-images img{
-    width: 100%;
-    height: auto;
-}
-
-/*#### Homepage feature section ####*/
-
-section.featured-work h4{
-    font-size: 0.88em;
-    text-align: center;
-    color: #3a3939;
-    margin: 0 0 40px 0;
-    text-transform: uppercase;
-}
-
-section.featured-work ul.homepage-featured-work{
+.site-content{
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
 
-section.featured-work ul.homepage-featured-work li.featured-work{
-    flex-basis: 30%;
+/*######### HEADER/FOOTER ##########*/
+
+/*header*/
+#masthead{
+    background: none repeat scroll 0 0 #45ac9d;
 }
 
-li.individual-featured-work h3{
+#primary-navigation.site-navigation ul li.menu-item{
     text-align: center;
-    font-size: 0.97em;
-    font-weight: 500;
-    margin: 25px 0;
 }
 
-/*### footer social icons ###*/
+/*footer*/
 
 div.menu-social-media-nav-container ul{
     list-style: none;
     display: flex;
     justify-content: flex-end;
 }
-
 
 div.menu-social-media-nav-container ul li a i._mi{
     color: #ffffff;
@@ -165,125 +56,260 @@ div.menu-social-media-nav-container ul li a i._mi{
     margin-left: 10px;
 }
 
-/*### page.php contact us style ###*/
+/*######### END HEADER/FOOTER ##########*/
 
-.contact {
+/*########## FRONT-PAGE.PHP ###########*/
+
+.home-page{
+    background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    padding: 75px 0;
+    margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.contact div.main-content{
-    max-width: 65%;
+.button {
+    background: none repeat scroll 0 0 #45ac9d;
+    width: 40%;
+    padding: 15px 25px;
 }
 
-.contact div.main-content h2{
-    font-size: 1.47em;
-    line-height: 35pt;
-    margin-top: 34px;
-}
-
-.contact nf-fields-wrap{
+.main-content{
     display: flex;
-    justify-content: space-between;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 90%;
+}
+
+/*Featured work*/
+
+.featured-work h4{
+    font-size: 1.4em;
+    text-align: center;
+    color: #3a3939;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.featured-work h3{
+    text-align: center;
+    margin: 15px 0 40px;
+}
+
+.featured-work .homepage-featured-work .individual-featured-work:nth-child(3) h3{
+    margin-bottom: 0;
+}
+
+.featured-work .site-content ul{
+    list-style: none;
+    margin: 0 1em;
+}
+
+/*Recent Posts*/
+
+.recent-posts .blog-post h4{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 1.35em;
+    font-size: 1.4em;
+}
+
+.recent-posts .blog-post h3{
+    font-size: 1.2em;
+    margin: 0 0 1.2em;
+}
+
+.recent-posts .blog-post p{
+    margin-top: 0;
+}
+
+/*Twitter Feed*/
+
+.activity{
+    border-top: solid 1px #3a3939;
+}
+
+.widget-area h4{
+    margin-bottom: 0;
+}
+
+ul.tweets {
+    list-style: none;
+}
+
+/*####### END FRONT-PAGE.PHP #######*/
+
+/*####### BLOGS (single.php, content-blog.php) ########*/
+
+#sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
+    width: 100%;
+    padding-top: 0;
 }
 
-.contact nf-field{
-   width: 47%;
-}
-
-.contact nf-field:nth-child(3),
-.contact nf-field:nth-child(4){
+#sidebar #primary-sidebar{
     width: 100%;
 }
 
-.contact nf-field:nth-child(4){
-    display: flex;
-    justify-content: flex-end;
+/*sidebar newsletter*/
+
+#sidebar .widget-title{
+    text-align: center;
 }
 
-div.nf-form-content label{
-    font-size: 16.5px;
-    line-height: 27.5px;
+.mc4wp-form-fields p label{
+    display: none;
 }
 
-div.nf-field-label label {
-    font-weight: 500;
+div.mc4wp-form-fields input[type="text"],
+div.mc4wp-form-fields input[type="email"]{
+    width: 100%;
 }
 
-input#nf-field-1.ninja-forms-field.nf-element,
-input#nf-field-2.ninja-forms-field.nf-element,
-textarea#nf-field-3.ninja-forms-field.nf-element{
-    background: #ffffff;
-}
-
-input#nf-field-4.ninja-forms-field.nf-element{
+div.mc4wp-form-fields input[type="submit"]{
     background: #45ac9d;
-    padding: 1em 3.75em;
+    padding: 0 10px;
+    width: 100%;
 }
 
-/*### About Page ###*/
-#primary.home-page.about{
-    padding: 70px 0 100px 0;
-}
+/*comment section*/
 
-.about .main-content p{
-    font-size: 1.47em;
-    font-weight: 600;
+form#commentform.comment-form{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: column wrap;
+    }
+    
+    p.comment-form-author,
+    p.comment-form-email{
+        width: 100%;
+    }
+    
+    p.comment-form-cookies-consent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    p.comment-form-cookies-consent label{
+        width: 75%;
+    }
+    
+    p.comment-form-cookies-consent #wp-comment-cookies-consent{
+        width: 20%;
+    }
+
+/*######## END BLOGS (single.php, content-blog.php) ##########*/
+
+/*############### PAGE-ABOUT.PHP ################*/
+
+/*hero section*/
+.about p{
     color: #ffffff;
-    width: 50%;
 }
 
+/*service intro*/
 .service-intro{
     text-align: center;
-    margin-bottom: 60px;
 }
 
+
+/*services section*/
 .service{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-flow: column wrap;
+}
+
+.site-content h4{
+    font-size: 1.1em;
 }
 
 .service-description{
-    width: 65%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .service-description h3{
-    font-size: 1.47em;
-    font-weight: 600;
-    line-height: 35pt;
-    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
 }
 
-.service:nth-child(even) .service-icon{
-    order: 2;
+/*CTA section*/
+
+.service-cta h2{
+    font-size: 1.2em;
+    margin: 0 0 25px 0;
 }
 
-.service:nth-child(even) .service-description{
-    order: 1;
+
+/*####################### PAGE.PHP ###################*/
+
+.contact .main-content h2{
+    margin-top: 0;
 }
 
-.service-cta{
-    margin-top: 30px;
+.contact .main-content p{
+    text-align: center;
 }
 
-.service-cta div.site-content{
+/*###################### END PAGE.PHP ##################*/
+
+
+/*##################### ARCHIVE-CASE_STUDIES.PHP, SINGLE-CASE_STUDIES.PHP ###############*/
+
+article.case-study{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    border-top: 1px solid #bfbfbf;
-    padding-top: 34px;
+    flex-flow: column wrap;
+    margin-bottom: 35px;
 }
 
-.service-cta div.site-content h2{
-    margin: 0;
+.case-study-sidebar{
+    margin-bottom: 25px;
 }
 
-/*### 404 ###*/
+.sfsi_responsive_icons{
+/*removes plug-in share feature from case_studies*/
+    display: none!important;
+}
+
+.case-study-sidebar h2{
+    margin-top: 0;
+    text-align: center;
+}
+
+.case-study-sidebar h4{
+    font-size: 1.0em;
+    text-align: center;
+    font-weight: 500;
+    color: #878787;
+    margin-top: 20px;
+}
+
+aside.case-study-sidebar h4 span{
+    color: #3b3b3b;
+}
+
+div.case-study-images img{
+    width: 100%;
+    height: auto;
+}
+
+/*#################### END ARCHIVE-CASE_STUDIES.PHP, SINGLE-CASE_STUDIES.PHP ##############*/
+
+/*################## 404.php ##############################*/
 
 .whoops{
-    background: url("img/404-image.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    background: url("img/404-image.jpg") no-repeat scroll right center / cover rgba(0,0,0,0);
 }
 
 .shucks{
@@ -295,8 +321,6 @@ input#nf-field-4.ninja-forms-field.nf-element{
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    
-    padding: 120px 0;
     width: 100%;
 }
 
@@ -314,22 +338,375 @@ input#nf-field-4.ninja-forms-field.nf-element{
     font-size: 2.0em;
 }
 
-/*### Blog Page ###*/
+/*######@@@@@ MEDIA QUERIES @@@@#####*/
 
-div.mc4wp-form-fields p label{
-    font-size: 0.8em;
+/*Galaxy Fold*/
+@media (max-width: 281px){
+    
+    .button{
+        width: 70%;
+    }
 }
 
-div.mc4wp-form-fields p:nth-child(4){
-    display: flex;
-    justify-content: flex-end;
+
+/*tablet*/
+@media (min-width: 768px){
+    
+    .home-page{
+        padding: 100px 0;
+    }
+    
+    .main-content{
+        width: 640px;
+        flex-grow: 0;
+    }
+    
+    .site-content{
+        padding: 100px 0;
+        width: 640px;
+    }
+    
+/*###### FRONT-PAGE.PHP ######*/
+    
+/*hero */
+    .hero-content h1{
+        font-size: 2.5em;
+        line-height: 1.5;
+    }
+    
+/*Featured-work*/
+    
+    section.featured-work ul.homepage-featured-work{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    
+    section.featured-work ul.homepage-featured-work li.individual-featured-work:nth-child(3){
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+/*activity recent post*/
+    
+    .activity{
+        align-items: flex-start;
+    }
+    
+/* ###### end FRONT-PAGE.PHP ########*/
+    
+/*####### BLOGS (single.php, content-blog.php) #########*/
+    
+    #sidebar {
+    width: 31%;
+}
+    
+    
+    .index-page .site-content{
+        align-items: flex-start;
+    }
+    
+    .single-page .site-content{
+        align-items: flex-start;
+    }
+    
+    #sidebar .widget-title{
+    text-align: left;
 }
 
-div.mc4wp-form-fields input[type="submit"]{
-    background: #45ac9d;
-    padding: 0 10px;
+/*comment section*/
+    p.comment-form-cookies-consent label{
+        width: 70%;
+    }
+    
+    p.comment-form-cookies-consent #wp-comment-cookies-consent{
+        width: 20%;
+    }
+    
+/*######### END BLOGS (single.php, content-blog.php) #######*/
+    
+    
+/*############## PAGE.PHP ################*/
+    
+    .contact .main-content h2{
+        font-size: 1.6em;
+    }
+    
+    .contact .main-content p{
+        text-align: left;
+    }
+    
+/*############# END PAGE.PHP ##################*/
+    
+/*############### PAGE-ABOUT.PHP ####################*/
+    
+    .service{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+    
+    .main-content p{
+        font-size: 1.2em;
+    }
+    
+    .service-intro h4{
+        margin-top: 0;
+    }
+    
+    .service-intro p{
+        font-size: 1.2em;
+    }
+    
+    .service-description{
+        width: 60%;
+        text-align: left;
+    }
+    
+    .service-description h3{
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+    
+    .service-description p{
+        font-size: 1.2em;
+    }
+    
+    .service:nth-child(even) .service-icon{
+        order: 2;
+    }
+    
+    .service:nth-child(odd) .service-description{
+        order: 1;
+    }
+    
+    .service:nth-child(4) {
+        margin-bottom: 0;
+    }
+    
+    /*CTA*/
+    .service-cta h2{
+        font-size: 1.7em;
+        margin-bottom: 40px;
+    }
+    
+/*################ END PAGE-ABOUT.PHP ##############*/
+    
+/*##################### ARCHIVE-CASE_STUDIES.PHP, SINGLE-CASE_STUDIES.PHP ###############*/
+
+article.case-study{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin-bottom: 35px;
 }
 
-#sidebar .widget{
-    padding-right: 15px;
+
+.case-study-sidebar{
+    flex-basis: 40%;
+    margin-bottom: 0;
 }
+    
+.case-study-sidebar h2{
+    text-align: left;
+    font-size: 1.35em;
+}
+
+.case-study-sidebar h4{
+    font-size: 1.0em;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.case-study-images{
+        flex-basis: 55%;
+    }
+    
+
+
+/*#################### END ARCHIVE-CASE_STUDIES.PHP, SINGLE-CASE_STUDIES.PHP ##############*/    
+    
+}
+
+/*desktop*/
+@media (min-width: 1200px){
+    
+/*#### FRONT-PAGE.PHP ####*/
+    
+    .main-content{
+        width: 960px;
+    }
+    
+    
+    .site-content{
+        width: 960px;
+        padding: 75px 0;
+    }
+    
+/*hero*/
+    
+    .hero-content h1{
+        font-size: 2.7em;
+    }
+    
+    .hero-content h3{
+        margin: 0 0 2.4em;
+    }
+    
+    .button {
+        max-width: 25%;
+    }
+    
+/*featured work*/
+    
+    section.featured-work h4{
+        font-size: 0.88em;
+        
+    }
+    
+    section.featured-work ul.homepage-featured-work li.individual-featured-work:nth-child(3){
+        flex-grow: 0;
+    }
+    
+    section.featured-work ul.homepage-featured-work li.individual-featured-work{
+        flex-basis: 30%;
+    }
+    
+    section.featured-work h3{
+        font-size: 0.8em;
+    }
+    
+/*recent posts*/
+    
+    .activity{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        border: none;
+    }
+    
+    .recent-posts{
+        width: 45%;
+        margin-bottom: 2em;
+    }
+    
+    .recent-posts .blog-post h4{
+        text-align: left;
+    }
+    
+/*twitter feed*/
+    
+    div#secondary.widget-area{
+        width: 45%;
+    }
+    
+    .widget-area h4{
+        margin-top: 0;
+    }
+    
+/*####### BLOGS (single.php, content-blog.php) ########*/
+    
+    p.comment-form-author,
+    p.comment-form-email{
+        width: 70%;
+    }
+    
+    p.comment-form-cookies-consent{
+        justify-content: space-around;
+    }
+    
+    p.comment-form-cookies-consent label{
+        width: 65%;
+    }
+    
+    p.comment-form-cookies-consent #wp-comment-cookies-consent{
+        width: 35%;
+    }
+    
+/*######## END BLOGS (single.php, content-blog.php) ##########*/
+    
+/*############## PAGE.PHP ################*/
+    
+    .contact .main-content h2{
+        font-size: 1.8em;
+    }
+    
+/*############# END PAGE.PHP ##################*/
+    
+/*######### PAGE-ABOUT.PHP ###########*/
+    
+    .service{
+        margin-bottom: 35px;
+    }
+    
+    .main-content p{
+        font-size: 1.4em;
+    }
+    
+    .service-intro h4{
+        font-size: 1.2em;
+    }
+    
+    .service-intro p{
+        font-size: 1.3em;
+    }
+    
+    .service-description{
+        width: 65%;
+    }
+    
+    .service-description h3{
+        font-size: 1.8em;
+    }
+    
+    .service-description p{
+        font-size: 1.3em;
+    }
+    
+    
+    /*CTA*/
+    .service-cta h2{
+        font-size: 1.8em;
+        margin-bottom: 50px;
+    }
+    
+/*############ END PAGE-ABOUT.PHP ################*/
+    
+/*##################### ARCHIVE-CASE_STUDIES.PHP, SINGLE-CASE_STUDIES.PHP ###############*/
+
+article.case-study{
+   
+    margin-bottom: 45px;
+}
+
+
+.case-study-sidebar{
+    flex-basis: 35%;
+}
+    
+.case-study-sidebar h2{
+    font-size: 1.5em;
+}
+
+.case-study-sidebar h4{
+    font-size: 1.2em;
+}
+
+.case-study-images{
+        flex-basis: 55%;
+    }
+
+/*#################### END ARCHIVE-CASE_STUDIES.PHP, SINGLE-CASE_STUDIES.PHP ##############*/ 
+ 
+/*#################### 404.PHP #########################*/
+    .uh-oh-text{
+    padding: 120px 0;
+}
+/*###################  END 404.PHP ######################*/
+}
+
+
+
+
+
